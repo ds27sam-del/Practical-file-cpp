@@ -1,10 +1,6 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
-    float student_per,income;
-    cout<<"Enter your percentage : ";
-    cin>>student_per;
-    cout<<"Enter income :";
-    cin>>income;
-    (student_per>=80.00 && income<=200000.00) ? cout<<"Eligible for scholarship" : cout<<"not Eligible";
-    return 0;}
+int main() {
+ float per, income;
+ cout << "Percentage & Income: "; cin >> per >> income;
+ cout << (per >= 80 && income < 200000 ? "Eligible for scholarship" : "Not Eligible") << endl;}

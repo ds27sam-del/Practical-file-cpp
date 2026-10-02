@@ -1,17 +1,14 @@
-#include<iostream>
-#include<string>
+#include <iostream>
 using namespace std;
-class ticket_p{
-    private:
-        int age=0;
-    public:
-        int price(){
-            cout<<"\nEnter your age : ";
-            cin>>age;
-            string result = age<=12 ? "100 rs" : "200 rs";
-            cout<<"Ticket price is : " << result ;}};
-int main(){
-        ticket_p p;
-        cout<<"==== Ticket Price ====";
-        p.price();
+class Ticket {
+    int age;
+public:
+    void calculate() {
+        cout << "Enter age: ";
+        cin >> age;
+        cout << "Ticket Price: " << (age < 12 ? "100 rs" : "200 rs") << endl;}};
+int main() {
+    cout << "==== Ticket Price ====\n";
+    Ticket t;
+    t.calculate();
     return 0;}

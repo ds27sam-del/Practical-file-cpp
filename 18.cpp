@@ -1,18 +1,8 @@
-#include<iostream>
-#include<string>
+#include <iostream>
 using namespace std;
-int main(){
-    string username,password;
-    bool login;
-    cout<<"Enter your username :";
-    cin>>username;
-    cout<<"Enter your password :";
-    cin>>password;
-    login=(username == "admin" && password == "1234");
-    if(login){
-        cout<<"Bool value is : "<<login <<"\n";
-        cout<<"WellCome back Sir ";}
-    else{
-        cout<<"Bool value is :"<<login <<"\n";
-        cout<<"Login denied  ";}
-    return 0;}
+int main() {
+ string user, pass;
+ cout << "User: "; cin >> user;
+ cout << "Pass: "; cin >> pass;
+ bool login = (user == "admin" && pass == "1234");
+ cout << "Status: " << login << (login ? "\nWelcome back Sir" : "\nLogin denied") << endl;}
